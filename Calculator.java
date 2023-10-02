@@ -1,16 +1,16 @@
-public class Calculator {
+class Calculator {
 
     int digit;
     String operation;
     int sdigit;
-    public Calculator(int parseInt, String s, int parseInt1) {
+    Calculator(int parseInt, String s, int parseInt1) {
         digit = parseInt;
         operation = s;
         sdigit = parseInt1;
     }
 
 
-    public  int operation() throws Exception {
+    int operation() throws Exception {
         if (1 <= digit && digit <= 10 && sdigit <= 10 && sdigit >= 1) {
             return switch (operation) {
                 case ("-") -> digit - sdigit;

@@ -1,6 +1,6 @@
-public class RomanNumber {
+class RomanNumber {
 
-    public int digit(String number){
+    int digit(String number){
         return switch (number) {
             case "I" -> 1;
             case "II" -> 2;
