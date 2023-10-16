@@ -41,8 +41,7 @@ public class Main {
         if ((!isNumeric(data[0]) && data[0].length() > 10) || (!isNumeric(data[1]) && data[1].length() > 10)) {
             throw new Exception("Invalid string operand");
         }
-
-        if (isNumeric(data[1]) && Integer.parseInt(data[1]) > 10 && Integer.parseInt(data[1]) < 1) {
+        if (isNumeric(data[1]) && (Integer.parseInt(data[1]) > 10 || Integer.parseInt(data[1]) < 1)) {
             throw new Exception("Invalid string operand");
         }
     }
